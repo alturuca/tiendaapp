@@ -1,10 +1,10 @@
 import React from 'react';
-import Menu from './components/menu';
+import Ventas from './components/Ventas';
 
 function App() {
   return (
     <div>
-      <Menu />
+      <Ventas />
     </div>
   );
 }
