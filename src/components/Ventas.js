@@ -71,51 +71,60 @@ function Venta() {
           </label>
         </section>
 
+        <div className='venta__boton__agregar'>
           <button onClick={agregarProducto} className="venta__boton">
               Agregar Producto
           </button>
-        
+
+
+        </div>
+
+          
 
         <section className="lista_label">
-        <label htmlFor="codigo">Código Producto</label>
-        <label htmlFor="cantidad">Cantidad</label>
-        <label htmlFor="valorUnitario">Valor Unitario</label>
+        <label className="lista__label__name" htmlFor="codigo">Código Producto</label>
+        <label className="lista__label__name" htmlFor="cantidad">Cantidad</label>
+        <label className="lista__label__name" htmlFor="valorUnitario">Valor Unitario</label>
         </section>
 
         {/* Inputs para ingresar productos */}
         <section className="venta__form">
           <div className="venta__form__fila">
             
-            <input
+            <input 
+              className="venta__input__dato"
               type="text"
               id="codigo"
               name="codigo"
               value={nuevoProducto.codigo}
               onChange={handleInputChange}
-              placeholder="Ej: 001"
-              className="venta__input"
+              
+              
             />
 
             
             <input
+              className="venta__input__dato"
+              
               type="number"
               id="cantidad"
               name="cantidad"
               value={nuevoProducto.cantidad}
               onChange={handleInputChange}
-              placeholder="Ej: 5"
-              className="venta__input"
+              
+              
             />
 
             
             <input
+              className="venta__input__dato"
               type="number"
               id="valorUnitario"
               name="valorUnitario"
               value={nuevoProducto.valorUnitario}
               onChange={handleInputChange}
-              placeholder="Ej: 2000"
-              className="venta__input"
+              
+              
             />
 
             

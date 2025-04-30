@@ -3,6 +3,12 @@
 * {
   padding: 0;
   margin: 0;
+
+}
+
+label {
+  font-size: 1.5rem !important;
+  color: white 
 }
 
 body {
@@ -37,135 +43,94 @@ body {
   text-align: center;
 }
 
+.venta__boton__agregar{
+  margin-top: 20px;
+
+  float: right;
+  margin-right: 115px;
+  background-color: #1c6cbc;
+ 
+ 
+  
+  cursor: pointer;
+}
 .venta__mostrar__etiqueta {
-  background-color: #f2f8f8;
-}
-
-.venta__titulo {
-  padding: 1% 10% 0% 7%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  gap: 5px;
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  text-align: center;
-}
-
-.venta__titulo__caja {
-  background-color: #0f466b;
-}
-
-.venta__contenido {
-  padding: 0% 10% 0% 7%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  gap: 5px;
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  text-align: center;
-}
-
-.venta__contenido__caja {
-  background-color: #f4f4f4;
-  color: #fafaf7;
+  
 }
 
 .lista_label{
-  margin-top: 10px;
-  padding: 0% 1% 0 2px;
-  gap: 10px;
-  display: flex;
-  justify-content: space-around;
-  
-  
-
+ margin: 15px 0px 0px 0px;
+ padding-left: 10px;
+ display: flex;
+ justify-content: space-around;
+ text-align: center;
+ 
 
 }
+
+.venta__input__dato{
+  text-align: right;
+  ;
+
+}
+
 
 
 .venta__form__fila {
   display: flex;
-  text-align: left; /* Alinea el texto del label a la izquierda */
-  margin: 0 10px;
+  gap: 10%;
+  padding: 0 25% 0% 8%;
+  
+  
  
 }
-.venta__input__grupo {
-  display: flex;
-  flex-direction: column; /* Organiza el label encima del input */
-  margin: 0 10px;
-}
 
 
-
-
-.venta__input {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc; /* Bordes del input */
-  border-radius: 5px; /* Bordes redondeados */
-}
-
-.venta__boton__seccion {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.venta__boton {
-  padding: 10px 20px;
-  background-color: #1d5d9b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.venta__boton:hover {
-  background-color: #0f466b;
-}
 
 .venta__datos {
-  max-height: 300px; /* Limita la altura visible de la tabla */
-  overflow-y: auto; /* Agrega scroll vertical para los datos */
-  border: 1px solid #ccc; /* Opcional: borde para delimitar la sección */
-  margin-top: 20px; /* Espaciado superior */
-  padding: 0; /* Quita el padding para que el diseño sea limpio */
-  background-color: #fafafa; /* Color de fondo */
-  border-radius: 5px; /* Bordes redondeados */
-
-}
-
-.venta__datos__fila:first-child {
-  position: sticky; /* Hace que esta fila quede fija */
-  top: 0; /* La fija en la parte superior del contenedor */
-  background-color: #1d5d9b; /* Color de fondo para distinguir el encabezado */
-  color: white; /* Color del texto */
-  font-weight: bold; /* Resalta los encabezados */
-  z-index: 1; /* Asegura que el encabezado quede sobre los datos */
-}
-
-
-.venta__datos__fila {
+  margin: 20px;
   display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  border-bottom: 1px solid #ccc;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 350px; /* Limita la altura visible de la tabla */
+  color: white;
+  overflow-y: auto; /* Agrega scroll vertical para los datos */
+  border: 1px solid #142b87; /* Opcional: borde para delimitar la sección */
+  margin-top: 20px; /* Espaciado superior */
+  padding: 0% 2% 20.4%; /* Quita el padding para que el diseño sea limpio */
+  background-color: #1D5D9B; /* Color de fondo */
+  
+  
 }
 
 .venta__datos__header {
   font-weight: bold;
-  color: #1d5d9b;
+  color: #eeeff1;
+  font-size: medium;
   
 }
 
+.venta__datos__fila {
+  display: flex;
+  justify-content: space-around;
+  text-align: right;
+  border-bottom: 1px solid #ccc;
+  gap: 10px;
+  
+}
+
+
+
 .venta__datos__caja {
+  display: flex;
+  align-items: right;
   text-align: center;
   font-size: 16px;
+  gap: 10px;
+  border: #000000 1px solid;
 }
 .footer {
+  
   color: #000000;
   background-color: #22D4FD;
   padding: 24px;
