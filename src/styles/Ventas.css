@@ -49,14 +49,9 @@ body {
   float: right;
   margin-right: 115px;
   background-color: #1c6cbc;
- 
- 
-  
   cursor: pointer;
 }
-.venta__mostrar__etiqueta {
-  
-}
+
 
 .lista_label{
  margin: 15px 0px 0px 0px;
@@ -70,7 +65,7 @@ body {
 
 .venta__input__dato{
   text-align: right;
-  ;
+  
 
 }
 
@@ -80,9 +75,7 @@ body {
   display: flex;
   gap: 10%;
   padding: 0 25% 0% 8%;
-  
-  
- 
+   
 }
 
 
@@ -99,8 +92,7 @@ body {
   margin-top: 20px; /* Espaciado superior */
   padding: 0% 2% 20.4%; /* Quita el padding para que el diseño sea limpio */
   background-color: #1D5D9B; /* Color de fondo */
-  
-  
+   
 }
 
 .venta__datos__header {
