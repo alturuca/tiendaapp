@@ -81,7 +81,7 @@ body {
 
 
 .venta__datos {
-  margin: 20px;
+  margin: 0% 5% 1.8% 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -125,7 +125,7 @@ body {
   
   color: #000000;
   background-color: #22D4FD;
-  padding: 24px;
+  padding: 15px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
