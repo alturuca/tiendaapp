@@ -18,18 +18,7 @@ body {
   color: #fafaf7;
 }
 
-.header {
-  padding: 0% 9% 0% 7%;
-}
 
-.header__encabezado {
-  padding: 3.5% 0% 0% 9%;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-}
 
 .venta__mostrar {
   padding: 1% 0% 0% 55%;

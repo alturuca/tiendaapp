@@ -3,15 +3,10 @@
 * {
   padding: 0;
   margin: 0;
+  label: none;
 }
 
-body {
-  height: 100vh;
-  box-sizing: border-box;
-  background-image: url('/public/assets/pexels-fmaderebner-623919.jpg');
-  background-size: cover;
-  color: #F4D160;
-}
+
 
 .acceso {
   width: 20%;

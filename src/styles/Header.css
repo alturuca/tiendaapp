@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    
+  }
+ .Encabezado {
+    padding: 1% 9% 0% 7%;
+    display: flex;
+    flex-direction: column;
+  
+    
+  }
+
+  .header__nav .nav-wrapper {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+  }
+
+  .image {
+    margin: 16px 0px 0px 10px;
+    
+   
+    
+   
+  }
+  
+  
+  .Encabezado__titulo {
+    flex-grow: 1; /* Hace que el título ocupe espacio y quede centrado */
+    text-align: center; /* Centra el texto */
+    font-size: 38px !important;
+    color: white;
+   
+
+     
+  }
+  
+  
+  
+  .header__nav ul {
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  .header__nav li {
+    margin: 0 10px;
+  }
+  
+  .header__nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .active {
+    border-bottom: 2px solid #22D4FD; /* Resalta el módulo activo */
+  }

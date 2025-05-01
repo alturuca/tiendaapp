@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  
 }
 
 body {
@@ -10,6 +11,7 @@ body {
   box-sizing: border-box;
   background-color: #1565c0;
   color: #24231C;
+ 
 }
 
 .header {

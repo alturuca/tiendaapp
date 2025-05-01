@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Inventario.css';
+import Header from './Header';
 
 const Inventario = () => {
   const [plu, setPlu] = useState('');
@@ -28,26 +29,8 @@ const Inventario = () => {
 
   return (
     <div className="inventario">
-      <header className="header">
-        <section className="header__encabezado">
-          <h4>Tienda de Bicicletas Bikeobs</h4>
-        </section>
-        <div className="header__nav">
-          <nav className="nav-extended transparent">
-            <div className="nav-wrapper">
-              <a href="/menu" className="brand-logo left">
-                <img src="/assets/bike.jpg" alt="Logo de la Tienda de Bicicletas Bikekeobs" height="65" width="60" />
-              </a>
-              <ul className="right hide-on-med-and-down">
-                <li><a href="/venta">Ventas</a></li>
-                <li className="active"><a href="/inventario">Inventario</a></li>
-                <li><a href="/ingreso_mercancia">Ingreso Mercancía</a></li>
-                <li><a href="/transferencia">Transferencia</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
+      {/* Header */}
+      <Header />
 
       <main className="centro">
         {/* Ingreso del PLU */}
