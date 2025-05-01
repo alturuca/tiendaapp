@@ -14,11 +14,7 @@ const Menu = () => {
       description: "Este modulo puede consultar todo lo relacionado con el inventario",
       link: "/inventario",
     },
-    {
-      title: "Gestión Producto",
-      description: "Permite ingresar, actualizar, eliminar los productos que maneja la tienda",
-      link: "/gestion_productos",
-    },
+    
     {
       title: "Ingreso Mercancía",
       description: "Este modulo puede registrar todo lo relacionado con los productos",
@@ -29,21 +25,17 @@ const Menu = () => {
       description: "Este modulo puede registrar y consultar todo lo relacionado con las transferencias",
       link: "/transferencia",
     },
-    {
-      title: "Gestión Personas",
-      description: "Permite crear usuario, clientes y proveedores",
-      link: "/gestion_personas",
-    },
+    
   ];
 
   return (
-    <div className="header">
-      <section className="header__encabezado">
+    <div className="menu">
+      <section className="menu__encabezado">
         <img
           src="/assets/bike.jpg"
           alt="Logo de la Tienda de Bicicletas Bikekeobs"
-          height="100"
-          width="100"
+          height="90"
+          width="90"
         />
         <h1 className="header__encabezado__texto">Tienda de Bicicletas Bikekeobs</h1>
         <a
@@ -59,7 +51,7 @@ const Menu = () => {
             {modules.map((module, index) => (
               <div key={index} className="zoom">
                 <a href={module.link}>
-                  <div className="col m4">
+                  <div className="col m5">
                     <div className="row">
                       <div className="col s12 m12">
                         <div className="card-panel hoverable card blue darken-3 card-content white-text">

@@ -14,19 +14,17 @@ body {
  
 }
 
-.header {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+.menu {
+  
+  
+  
 }
 
-.header__encabezado {
-  padding: 6% 0% 0% 7%;
-  height: 50px;
+.menu__encabezado {
+  padding: 1% 5% 0% 5%;
   display: flex;
   flex-direction: row;
-  gap: 250px;
+  justify-content: space-between;
   align-items: center;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
@@ -36,11 +34,9 @@ body {
   background-color: #75C2F6;
   border: none;
   color: #0f3255;
-  padding: 14px 28px;
   cursor: pointer;
   border-radius: 10px;
-  display: inline-flex;
-  font-size: 20px;
+  display: inline-flex;  
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -57,7 +53,7 @@ body {
 }
 
 .home {
-  padding: 5% 0% 0% 0%;
+  padding: 1% 0% 0% 4%;
 }
 
 .card.hoverable {
