@@ -6,13 +6,28 @@ const Inventario = () => {
   const [nombreProducto, setNombreProducto] = useState('');
   const [existencia, setExistencia] = useState('');
 
-  const checkProduct = () => {
-    alert(`Verificando producto:\nPLU: ${plu}\nNombre: ${nombreProducto}\nExistencia: ${existencia}`);
+  // Simulación de una base de datos con productos
+  const productos = [
+    { plu: '1001', nombre: 'Bicicleta Montaña', existencia: 15 },
+    { plu: '1002', nombre: 'Bicicleta Ruta', existencia: 8 },
+    { plu: '1003', nombre: 'Casco Deportivo', existencia: 20 },
+    { plu: '1004', nombre: 'Guantes Ciclismo', existencia: 30 },
+  ];
+
+  // Función para buscar producto por PLU
+  const buscarProducto = () => {
+    const producto = productos.find((p) => p.plu === plu);
+    if (producto) {
+      setNombreProducto(producto.nombre);
+      setExistencia(producto.existencia);
+    } else {
+      setNombreProducto('No encontrado');
+      setExistencia('N/A');
+    }
   };
 
   return (
     <div className="inventario">
-      {/* Header */}
       <header className="header">
         <section className="header__encabezado">
           <h4>Tienda de Bicicletas Bikeobs</h4>
@@ -34,8 +49,8 @@ const Inventario = () => {
         </div>
       </header>
 
-      {/* Main content */}
       <main className="centro">
+        {/* Ingreso del PLU */}
         <section className="centro__informacion">
           <label htmlFor="plu">PLU:</label>
           <input
@@ -54,7 +69,7 @@ const Inventario = () => {
             type="text"
             name="nombre_producto"
             value={nombreProducto}
-            onChange={(e) => setNombreProducto(e.target.value)}
+            readOnly
           />
 
           <label htmlFor="existencia">Existencia:</label>
@@ -64,18 +79,18 @@ const Inventario = () => {
             type="text"
             name="existencia"
             value={existencia}
-            onChange={(e) => setExistencia(e.target.value)}
+            readOnly
           />
         </section>
 
+        {/* Botón para buscar el producto */}
         <section className="centro__boton">
-          <button className="centro__boton__link" onClick={checkProduct}>
+          <button className="centro__boton__link" onClick={buscarProducto}>
             Verificar Producto
           </button>
         </section>
       </main>
 
-      {/* Footer */}
       <footer className="footer">
         <p>Desarrollado por Alex Tulio Ruiz Camilo</p>
       </footer>

@@ -43,13 +43,27 @@ body {
   text-align: center;
 }
 
-.venta__boton__agregar{
-  margin-top: 20px;
-
+.centro__boton {
+  padding: 0.3% 10% 0% 0%;
+  display: flex;
   float: right;
-  margin-right: 115px;
-  background-color: #1c6cbc;
+  
+  text-align: center;
+  justify-content: center;
+}
+
+.centro__boton__link {
+  background-color: #235076;
+  border: none;
+  color: white;
+  padding: 14px 28px;
   cursor: pointer;
+  border-radius: 10px;
+  display: inline-flex;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 
@@ -90,7 +104,7 @@ body {
   overflow-y: auto; /* Agrega scroll vertical para los datos */
   border: 1px solid #142b87; /* Opcional: borde para delimitar la sección */
   margin-top: 20px; /* Espaciado superior */
-  padding: 0% 2% 20.4%; /* Quita el padding para que el diseño sea limpio */
+  padding: 0% 2% 19%; /* Quita el padding para que el diseño sea limpio */
   background-color: #1D5D9B; /* Color de fondo */
    
 }

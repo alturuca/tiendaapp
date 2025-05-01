@@ -71,13 +71,14 @@ function Venta() {
           </label>
         </section>
 
-        <div className='venta__boton__agregar'>
-          <button onClick={agregarProducto} className="venta__boton">
-              Agregar Producto
+        
+
+        {/* Botón para buscar el producto */}
+        <section className="centro__boton">
+          <button className="centro__boton__link" onClick={agregarProducto}>
+            Agregar Producto
           </button>
-
-
-        </div>
+        </section>
 
           
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import Inventario from './components/Inventario';
+import Transferencia from './components/Transferencia';
 
 function App() {
   return (
     <div>
-      <Inventario />
+      <Transferencia />
     </div>
   );
 }
