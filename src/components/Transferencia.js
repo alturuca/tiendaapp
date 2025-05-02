@@ -35,36 +35,59 @@ const Transferencia = () => {
     {/* Header */}
     <Header />
 
-      <main className="centro">
+      <main className="Tcentro">
         {/* Barra de búsqueda */}
-        <section className="centro__busqueda">
+        <section className="Tcentro__busqueda">
           <p>Busca por código o nombre del producto:</p>
           <input
-            className="centro__busqueda__entrada"
+            className="Tcentro__busqueda__entrada"
             type="search"
             placeholder="Código o nombre del producto"
             value={busqueda}
             onChange={(e) => setBusqueda(e.target.value)}
           />
-          <button className="centro__boton__link" onClick={buscarProducto}>
+          <button className="Tcentro__boton__link" onClick={buscarProducto}>
             Buscar
           </button>
         </section>
 
         {/* Información del producto siempre visible */}
-        <section className="centro__informacion">
+        <section className="Tcentro__informacion">
           <label>Código:</label>
-          <label className="centro__informacion__etiqueta">{productoEncontrado.codigo}</label>
+          <input
+            className="Tcentro__informacion__etiqueta"
+            id="Codigo"
+            type="text"
+            name="Codigo"
+            value={productoEncontrado.codigo}
+            readOnly
+          />
+
 
           <label>Nombre Producto:</label>
-          <label className="centro__informacion__etiqueta">{productoEncontrado.nombre}</label>
+          <input
+            className="Tcentro__informacion__etiqueta"
+            id="nombre_producto"
+            type="text"
+            name="nombre_producto"
+            value={productoEncontrado.nombre}
+            readOnly
+          />
 
           <label>Cantidad:</label>
-          <label className="centro__informacion__etiqueta">{productoEncontrado.cantidad}</label>
+          <input
+            className="Tcentro__informacion__etiqueta"
+            id="cantidad"
+            type="text"
+            name="cantidad"
+            value={productoEncontrado.cantidad}
+            readOnly
+          />
+          
 
           <label>Área a Transferir:</label>
           <input
-            className="centro__informacion__entrada"
+            className="Tcentro__informacion__etiqueta"
             type="text"
             placeholder="Ej: Bodega 3"
             value={areaTransferencia}

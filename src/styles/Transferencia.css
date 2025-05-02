@@ -12,27 +12,30 @@ body {
   color: #FBEEAC;
 }
 
-.centro {
-  padding: 20px;
+.Tcentro {
+  padding: 50px;
   text-align: center;
+  color: white;
+  font-size: 18px;
 }
 
-.centro__busqueda {
+.Tcentro__busqueda {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 10px 0 15px 0;
 }
 
-.centro__busqueda__entrada {
-  width: 520px;
+.Tcentro__busqueda__entrada {
+  width: 230px !important;
   height: 35px;
   border-radius: 10px;
   text-align: center;
   font-size: 18px;
 }
 
-.centro__boton__link {
+.Tcentro__boton__link {
     background-color: #235076;
     border: none;
     color: white;
@@ -46,20 +49,22 @@ body {
     text-decoration: none;
   }
 
-.centro__boton__link:hover {
+.Tcentro__boton__link:hover {
   background-color: #1b3f5d;
 }
 
-.centro__informacion {
+.Tcentro__informacion {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 25% 25%;
+  padding: 0 0 3% 33%;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-.centro__informacion__etiqueta {
+.Tcentro__informacion__etiqueta {
   background-color: #f2f8f8;
-  padding: 5px;
+  text-align: center;  
   border-radius: 5px;
+  width: 200px !important;
 }
 

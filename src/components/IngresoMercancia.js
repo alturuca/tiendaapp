@@ -48,8 +48,8 @@ const IngresoMercancia = () => {
       <Header />
 
       {/* Main content */}
-      <main className="centro">
-        <section className="centro__informacion">
+      <main className="IMcentro">
+        <section className="IMcentro__informacion">
           <label htmlFor="plu">PLU:</label>
           <input
             id="plu"
@@ -78,20 +78,23 @@ const IngresoMercancia = () => {
           />
         </section>
 
-        {/* Botón para verificar si el producto ya existe */}
-        <section className="centro__boton">
-          <button className="centro__boton__link" onClick={verificarProducto}>
-            Verificar Producto
-          </button>
-        </section>
+        {/* Botones para verificar y guardar producto */}
+        <div className="IMboton">
 
-        {/* Botón para registrar el producto */}
-        <section className="centro__boton">
-          <button className="centro__boton__link" onClick={guardarProducto}>
-            Guardar
-          </button>
-        </section>
+          {/* Botón para verificar si el producto ya existe */}
+          <section className="IMcentro__boton">
+            <button className="IMcentro__boton__link" onClick={verificarProducto}>
+              Verificar Producto
+            </button>
+          </section>
 
+          {/* Botón para registrar el producto */}
+          <section className="IMcentro__boton">
+            <button className="IMcentro__boton__link" onClick={guardarProducto}>
+              Guardar
+            </button>
+          </section>
+        </div>
         {/* Mensaje de estado */}
         {mensaje && <p className="mensaje">{mensaje}</p>}
       </main>

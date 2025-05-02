@@ -61,9 +61,9 @@ function Venta() {
           
 
         <section className="lista_label">
-        <label className="lista__label__name" htmlFor="codigo">Código Producto</label>
-        <label className="lista__label__name" htmlFor="cantidad">Cantidad</label>
-        <label className="lista__label__name" htmlFor="valorUnitario">Valor Unitario</label>
+          <label className="lista__label__name" htmlFor="codigo">Código Producto</label>
+          <label className="lista__label__name" htmlFor="cantidad">Cantidad</label>
+          <label className="lista__label__name" htmlFor="valorUnitario">Valor Unitario</label>
         </section>
 
         {/* Inputs para ingresar productos */}

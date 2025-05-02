@@ -18,10 +18,8 @@ input {
     height: 1.5em !important
 }
 
-label {
-    
-    font-size: 1rem !important;
-    
+label {    
+    font-size: 1rem !important;    
 }
 
 textarea {
@@ -29,11 +27,8 @@ textarea {
     
 }
 
-
-
 .header{
     padding: 0% 9% 0% 7%;
-
 }
 
 .header__encabezado{
@@ -43,34 +38,30 @@ textarea {
     flex-direction: row;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
-
-
-
-.centro__informacion{
+.IMcentro__informacion{
     padding: 6% 0% 4% 22%;
     display: grid;
     grid-template-columns: 25% 25%;
     gap: 15px;
     text-align: center;
-    
-
-
 }
 
-.centro__boton{
-    
+.IMboton{
+    padding-bottom: 7%;
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    text-align: center;
-    justify-content: center;
-  
-    
 }
-.centro__boton__link{
+
+.IMcentro__boton{    
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;    
+}
+.IMcentro__boton__link{
     background-color:#235076;
     border: none; 
     color: white; 
@@ -82,6 +73,5 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-decoration: none;
-
 }
 

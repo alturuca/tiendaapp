@@ -12,14 +12,18 @@ body {
   color: #f8f7f3;
 }
 
-.centro {
+.Incentro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   padding: 2% 0% 0% 7%;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 
-.centro__informacion {
+.Incentro__informacion {
   padding: 6% 0% 5% 22%;
   display: grid;
   grid-template-columns: 25% 25%;
@@ -27,19 +31,20 @@ body {
   text-align: center;
 }
 
-.centro__informacion__entrada {
+.Incentro__informacion__entrada {
   background-color: #f2f8f8 !important;
   height: 1.5em !important;
 }
 
-.centro__boton {
+.Incentro__boton {
+  padding: 0% 15% 9.7% 0%;
   display: flex;
   gap: 20px;
   text-align: center;
   justify-content: center;
 }
 
-.centro__boton__link {
+.Incentro__boton__link {
   background-color: #235076;
   border: none;
   color: white;

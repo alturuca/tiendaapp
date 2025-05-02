@@ -33,12 +33,12 @@ const Inventario = () => {
       {/* Header */}
       <Header />
 
-      <main className="centro">
+      <main className="Incentro">
         {/* Ingreso del PLU */}
-        <section className="centro__informacion">
+        <section className="Incentro__informacion">
           <label htmlFor="plu">PLU:</label>
           <input
-            className="centro__informacion__entrada"
+            className="Incentro__informacion__entrada"
             id="plu"
             type="number"
             name="plu"
@@ -48,7 +48,7 @@ const Inventario = () => {
 
           <label htmlFor="nombre_producto">Nombre Producto:</label>
           <input
-            className="centro__informacion__entrada"
+            className="Incentro__informacion__entrada"
             id="nombre_producto"
             type="text"
             name="nombre_producto"
@@ -58,7 +58,7 @@ const Inventario = () => {
 
           <label htmlFor="existencia">Existencia:</label>
           <input
-            className="centro__informacion__entrada"
+            className="Incentro__informacion__entrada"
             id="existencia"
             type="text"
             name="existencia"
@@ -68,8 +68,8 @@ const Inventario = () => {
         </section>
 
         {/* Botón para buscar el producto */}
-        <section className="centro__boton">
-          <button className="centro__boton__link" onClick={buscarProducto}>
+        <section className="Incentro__boton">
+          <button className="Incentro__boton__link" onClick={buscarProducto}>
             Verificar Producto
           </button>
         </section>

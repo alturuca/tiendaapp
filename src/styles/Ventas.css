@@ -57,13 +57,11 @@ body {
 
 
 .lista_label{
- margin: 15px 0px 0px 0px;
- padding-left: 10px;
+ margin: 40px 0px 0px 0px;
+ padding-left: 30px;
  display: flex;
  justify-content: space-around;
- text-align: center;
  
-
 }
 
 .venta__input__dato{
@@ -77,24 +75,24 @@ body {
 .venta__form__fila {
   display: flex;
   gap: 10%;
-  padding: 0 25% 0% 8%;
+  padding: 0 25% 2% 8%;
    
 }
 
 
 
 .venta__datos {
-  margin: 0% 5% 1.8% 5%;
+  margin: 0% 5% 3.4% 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 350px; /* Limita la altura visible de la tabla */
+  max-height: 34px; 
   color: white;
-  overflow-y: auto; /* Agrega scroll vertical para los datos */
-  border: 1px solid #142b87; /* Opcional: borde para delimitar la sección */
-  margin-top: 20px; /* Espaciado superior */
-  padding: 0% 2% 19%; /* Quita el padding para que el diseño sea limpio */
-  background-color: #1D5D9B; /* Color de fondo */
+  overflow-y: auto; 
+  border: 1px solid #142b87; 
+  margin-top: 20px; 
+  padding: 0% 2% 19%; 
+  background-color: #1D5D9B; 
    
 }
 
@@ -107,10 +105,10 @@ body {
 
 .venta__datos__fila {
   display: flex;
+  width: 100%;
   justify-content: space-around;
-  text-align: right;
-  border-bottom: 1px solid #ccc;
-  gap: 10px;
+  
+  gap: 30px;
   
 }
 
@@ -118,10 +116,10 @@ body {
 
 .venta__datos__caja {
   display: flex;
-  align-items: right;
-  text-align: center;
+  width: 50%;
+  justify-content: space-around; 
   font-size: 16px;
-  gap: 10px;
-  border: #000000 1px solid;
+  border: #898888 2px solid;
+  color: black;
 }
 

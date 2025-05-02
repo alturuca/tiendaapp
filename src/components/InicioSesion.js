@@ -40,6 +40,7 @@ const InicioSesion = () => {
       <div className="acceso">
         <div className="acceso__intro">
           <img
+            className="acceso__intro__logo"
             src="/assets/bike.jpg"
             alt="Logo de la Tienda de Bicicletas Bikekeobs"
             height="170"
@@ -50,6 +51,7 @@ const InicioSesion = () => {
               <form className="col s12">
                 <div className="input-field col s12">
                   <input
+                    className='acceso__input'
                     id="usuario"
                     type="text"
                     value={usuario}
@@ -61,6 +63,7 @@ const InicioSesion = () => {
                 </div>
                 <div className="input-field col s12">
                   <input
+                    className='acceso__input'
                     id="contraseña"
                     type="password"
                     value={contraseña}
@@ -78,7 +81,7 @@ const InicioSesion = () => {
               onClick={handleLogin}
               className="waves-effect waves-light btn-small indigo darken-4"
             >
-              <samp className="indigo-text text-lighten-4">Iniciar Sesión</samp>
+              <samp className="indigo-text text-lighten-4 ">Iniciar Sesión</samp>
             </button>
           </div>
         </div>
