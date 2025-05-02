@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/IngresoMercancia.css';
 import Header from './Header';
+import Pie from './Pie';
 
 const IngresoMercancia = () => {
   const [plu, setPlu] = useState('');
@@ -96,9 +97,7 @@ const IngresoMercancia = () => {
       </main>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>Desarrollado por Alex Tulio Ruiz Camilo</p>
-      </footer>
+      <Pie />
     </div>
   );
 };

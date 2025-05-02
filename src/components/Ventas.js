@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Ventas.css';
 import Header from '../components/Header.js';
+import Pie from '../components/Pie.js';
 
 function Venta() {
   const [productos, setProductos] = useState([]);
@@ -129,9 +130,7 @@ function Venta() {
       </main>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>Desarrollado por Alex Tulio Ruiz Camilo</p>
-      </footer>
+      <Pie />
     </div>
   );
 }

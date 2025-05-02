@@ -1,0 +1,13 @@
+.pie {
+    margin-top: 30px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 18px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }

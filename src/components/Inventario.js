@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Inventario.css';
 import Header from './Header';
+import Pie from './Pie';
 
 const Inventario = () => {
   const [plu, setPlu] = useState('');
@@ -74,9 +75,7 @@ const Inventario = () => {
         </section>
       </main>
 
-      <footer className="footer">
-        <p>Desarrollado por Alex Tulio Ruiz Camilo</p>
-      </footer>
+      <Pie />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Transferencia.css';
 import Header from './Header';
+import Pie from './Pie';
 
 const Transferencia = () => {
   const [busqueda, setBusqueda] = useState('');
@@ -72,9 +73,7 @@ const Transferencia = () => {
         </section>
       </main>
 
-      <footer className="footer">
-        <p>Desarrollado por Alex Tulio Ruiz Camilo</p>
-      </footer>
+      <Pie />
     </div>
   );
 };
