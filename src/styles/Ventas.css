@@ -86,7 +86,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 34px; 
+  max-height: 340px; 
   color: white;
   overflow-y: auto; 
   border: 1px solid #142b87; 
