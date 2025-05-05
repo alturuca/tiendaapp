@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Transferencia.css';
 import Header from './Header';
 import Pie from './Pie';
+import Botones from './Botones';
 
 const Transferencia = () => {
   const [busqueda, setBusqueda] = useState('');
@@ -46,11 +47,10 @@ const Transferencia = () => {
             value={busqueda}
             onChange={(e) => setBusqueda(e.target.value)}
           />
-          <button className="Tcentro__boton__link" onClick={buscarProducto}>
-            Buscar
-          </button>
-        </section>
+          
+          <Botones texto="Buscar Producto" onClick={buscarProducto} />          
 
+        </section> 
         {/* Información del producto siempre visible */}
         <section className="Tcentro__informacion">
           <label>Código:</label>

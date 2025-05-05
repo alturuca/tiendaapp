@@ -41,19 +41,7 @@ body {
   justify-content: center;
 }
 
-.centro__boton__link {
-  background-color: #235076;
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  cursor: pointer;
-  border-radius: 10px;
-  display: inline-flex;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-}
+
 
 
 .lista_label{
@@ -86,7 +74,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 340px; 
+  max-height: 315px; 
   color: white;
   overflow-y: auto; 
   border: 1px solid #142b87; 

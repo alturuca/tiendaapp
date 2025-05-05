@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Ventas.css';
 import Header from '../components/Header.js';
 import Pie from '../components/Pie.js';
+import Botones from './Botones.js';
 
 function Venta() {
   const [productos, setProductos] = useState([]);
@@ -52,14 +53,13 @@ function Venta() {
         
 
         {/* Botón para buscar el producto */}
+        
+        
         <section className="centro__boton">
-          <button className="centro__boton__link" onClick={agregarProducto}>
-            Agregar Producto
-          </button>
+          <Botones texto="Agregar Producto" onClick={agregarProducto} />
         </section>
 
-          
-
+                 
         <section className="lista_label">
           <label className="lista__label__name" htmlFor="codigo">Código Producto</label>
           <label className="lista__label__name" htmlFor="cantidad">Cantidad</label>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Inventario.css';
 import Header from './Header';
 import Pie from './Pie';
+import Botones from './Botones';
 
 const Inventario = () => {
   const [plu, setPlu] = useState('');
@@ -69,9 +70,8 @@ const Inventario = () => {
 
         {/* Botón para buscar el producto */}
         <section className="Incentro__boton">
-          <button className="Incentro__boton__link" onClick={buscarProducto}>
-            Verificar Producto
-          </button>
+          <Botones texto="Verificar Producto" onClick={buscarProducto} />
+          
         </section>
       </main>
 

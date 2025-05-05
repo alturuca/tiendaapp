@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/IngresoMercancia.css';
 import Header from './Header';
-import Pie from './Pie';
+import Pie from './Pie'; 
+import Botones from './Botones';
 
 const IngresoMercancia = () => {
   const [plu, setPlu] = useState('');
@@ -83,16 +84,12 @@ const IngresoMercancia = () => {
 
           {/* Botón para verificar si el producto ya existe */}
           <section className="IMcentro__boton">
-            <button className="IMcentro__boton__link" onClick={verificarProducto}>
-              Verificar Producto
-            </button>
+            <Botones texto="Verificar Producto" onClick={verificarProducto} />            
           </section>
 
           {/* Botón para registrar el producto */}
           <section className="IMcentro__boton">
-            <button className="IMcentro__boton__link" onClick={guardarProducto}>
-              Guardar
-            </button>
+            <Botones texto="Guardar" onClick={guardarProducto} />            
           </section>
         </div>
         {/* Mensaje de estado */}
